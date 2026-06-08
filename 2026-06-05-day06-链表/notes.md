@@ -1,0 +1,6 @@
+pre指针的作用：因为要原地反转链表，那么也就是反转指向，pre初始化为nullptr，作为反转之后的最后指向
+cur指针的作用：将cur指向头节点，并保存cur的next为temp，修改cur的next指向为pre，完成了局部节点的反转
+temp的作用：由于cur的next修改为了pre，如果没有temp来保存修改前的cur的next，那么在cur的next指向pre后，cur的原始next就找不到了，无法继续反转下一份节点
+
+
+explicit 用来修饰构造函数，表示无法通过隐式调用来调用构造函数。
